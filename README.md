@@ -1,12 +1,12 @@
-# Exchange Rate Predictor - RMIT Machine Learning Course Starting Project
+# Exchange Rate Predictor
 
-A comprehensive machine learning web application for exchange rate prediction designed for educational purposes. This project demonstrates fundamental ML concepts including data fetching, model training, prediction, and evaluation.
+A comprehensive machine learning web application for exchange rate prediction. This project demonstrates ML concepts, including data fetching, model training, prediction, and evaluation.
 
 ## 🎯 Project Overview
 
 This starting project includes:
 
-- **Exchange Rate Prediction**: Simple averaging model for educational demonstration
+- **Exchange Rate Prediction**: Simple averaging model 
 - **Web Interface**: Flask-based web application with user authentication
 - **Data Management**: Automated data fetching and management system
 - **Visualization**: Interactive charts showing historical rates and predictions
@@ -69,16 +69,16 @@ python test_api.py
 
 4. **Access Web Interface**:
    - Open http://localhost:5000
-   - Use demo credentials displayed on homepage
+   - Use demo credentials displayed on the homepage
 
 ## 📊 Usage Guide
 
 ### Demo Credentials
 
 The application displays demo credentials on the homepage:
-- **student** / ml2025
+- **phuoc** / phuoc
 - **demo** / password123  
-- **admin** / rmit2025
+- **admin** / phuoc_admin
 
 ### Basic Workflow
 
@@ -93,7 +93,7 @@ The application displays demo credentials on the homepage:
 
 ### Available Currency Pairs
 
-The system supports 30+ major currency pairs including:
+The system supports 30+ major currency pairs, including:
 - **Major**: USD/EUR, USD/GBP, USD/JPY, USD/CAD, USD/AUD, USD/CHF
 - **Cross**: EUR/GBP, EUR/JPY, GBP/JPY, CHF/JPY
 - **Asian**: USD/CNY, USD/INR, USD/KRW, USD/SGD, USD/THB, USD/VND
@@ -104,7 +104,7 @@ The system supports 30+ major currency pairs including:
 ### File Structure
 
 ```
-rmit_mai_computational_ml_starting_project/
+ml_project/
 ├── app.py                 # Flask web application
 ├── predictor.py          # ML model implementation
 ├── data_fetcher.py       # Data acquisition system
@@ -132,7 +132,7 @@ rmit_mai_computational_ml_starting_project/
 **Algorithm**: Simple Moving Average
 ```python
 def predict(self, currency_pair, prediction_date, days_ahead):
-    # Use average of last 10 exchange rates
+    # Use the average of the last 10 exchange rates
     predicted_rate = np.mean(last_10_rates)
     return predictions
 ```
@@ -204,11 +204,11 @@ python app.py
 
 1. **"No data available for USD_to_EUR" Error**:
    - Run `python test_api.py` to diagnose the issue
-   - Click "Fetch Latest Data" button in the web interface first
-   - Check internet connection to Yahoo Finance
+   - Click the "Fetch Latest Data" button in the web interface first
+   - Check the internet connection to Yahoo Finance
 
 2. **Yahoo Finance Connection Issues**:
-   - Ensure stable internet connection
+   - Ensure a stable internet connection
    - Yahoo Finance may have temporary outages
    - Try running the test script to verify connectivity
 
@@ -225,41 +225,3 @@ python app.py
 - **Application Logs**: Console output
 - **Prediction Logs**: `logs/predictions.log`
 - **Data Files**: `data/exchange_rates.csv`
-
-## 📚 Further Reading
-
-### Machine Learning Concepts
-
-- Time Series Forecasting
-- Model Evaluation Metrics
-- Cross-validation Techniques
-- Feature Engineering
-
-### Technical Documentation
-
-- [Flask Documentation](https://flask.palletsprojects.com/)
-- [Pandas Documentation](https://pandas.pydata.org/docs/)
-- [Scikit-learn Documentation](https://scikit-learn.org/stable/)
-- [Plotly Documentation](https://plotly.com/python/)
-
-## 🤝 Contributing
-
-This is an educational project. Students are encouraged to:
-
-1. Fork the repository
-2. Implement improvements
-3. Add new features
-4. Share learning experiences
-
-## 📄 License
-
-Educational use only. Not intended for production trading or financial decisions.
-
-## 🙋‍♂️ Support
-
-For course-related questions, contact your RMIT instructor or use the course forum.
-
----
-
-**Built for RMIT Machine Learning Course**  
-*Demonstrating ML workflow fundamentals through practical application*
