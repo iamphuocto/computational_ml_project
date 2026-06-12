@@ -11,7 +11,7 @@ import plotly.graph_objs as go
 import plotly.utils
 
 app = Flask(__name__)
-app.secret_key = 'rmit_ml_course_demo_key_2025'
+app.secret_key = 'ml_project'
 
 # Initialize components
 data_fetcher = ExchangeRateDataFetcher()
@@ -19,9 +19,9 @@ predictor = ExchangeRatePredictor()
 
 # Demo credentials (displayed on homepage)
 DEMO_USERS = {
-    'student': 'ml2025',
+    'phuoc': 'phuoc',
     'demo': 'password123',
-    'admin': 'rmit2025'
+    'admin': 'phuoc_admin'
 }
 
 # Global progress tracking
